@@ -6,9 +6,9 @@ export default function Header() {
         <>
             <nav className="navbar navbar-expand-lg p-1 sticky-top">
                 <div className="container">
-                    <a className="navbar-brand text-white fs-2" href="#"><img src={logo} height={80} width={70} alt="logo" /><span style={{ color: '#03b672' }}>P</span>ratik <span style={{ color: '#03b672' }}>S</span>amarth</a>
-                    <button className="navbar-toggler" style={{backgroundColor:"#03b672",color:"transparent"}} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <a className="navbar-brand text-white fs-2" href="#"><img src={logo} height={80} width={70} alt="logo" /><span style={{ color: '#03b672'}}>P</span>ratik <span style={{ color: '#03b672' }}>S</span>amarth</a>
+                    <button className="navbar-toggler" style={{ backgroundColor: "transparent", color: "transparent" }} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="" role="button" ><i className="bi bi-list fs-2" aria-hidden="true" style={{color:"white"}}></i></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -25,7 +25,7 @@ export default function Header() {
                                 <a className="nav-link" href="#project">Projects</a>
                             </li>
                         </ul>
-                        <div className="d-flex" id="icons">
+                        <div className='responsiveIcons'>
                             <a className="text-white me-3" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
                             <a className="text-white me-3" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
                             <a className="text-white me-3" href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><i className="bi bi-twitter-x"></i></a>
