@@ -20,8 +20,8 @@ export default function Body() {
                             <p className="mt-4">Full Stack Developer</p>
                             <p className="mt-4">I'm Pratik Samarth, a dedicated Software Development Engineer, fueled by a fervent passion for full-stack development. Committed to continuous growth, I thrive as a self-learner in the ever-evolving world of technology.</p>
                         </div>
-                        <a href="Pratik Samarth.pdf" download={"Pratik Samarth.pdf"}><button type="button" className="btn text-white btn-lg mt-4 me-3 homeBtn">Resume</button></a>
-                        <a href="#contact"><button type="button" className="btn text-white btn-lg mt-4 homeBtn">Contact</button></a>
+                        <a href="Pratik Samarth.pdf" download={"Pratik Samarth.pdf"}><button type="button" className="btn text-white mt-4 homeBtn">Hire Me</button></a>
+                        {/* <a href="#contact"><button type="button" className="btn text-white btn-lg mt-4 homeBtn">Contact</button></a> */}
                     </div>
                     <div className="col-lg-6 text-lg-end text-md-center text-sm-center text-center mt-sm-5 mt-lg-0 mt-md-5">
                         <img src={profile} className="responsiveImage1" width={415} height={420} alt="..." style={{ borderRadius: "1000px" }} />
@@ -53,7 +53,7 @@ export default function Body() {
 
                 <div className="row section" id="experience">
                     <h4 style={{ color: '#03b672' }}>_ Experience</h4>
-                    <p className="lead" id="edit2">Where i previously worked</p>
+                    <p className="lead" id="edit">Where i previously worked</p>
                     <div className="col-lg-6 mb-md-5 mb-sm-5" id="responsiveContent">
                         <div className="p-4" id="content_small">
                             <div className="card-body">
@@ -81,10 +81,10 @@ export default function Body() {
 
                 <div className="row section" id="project">
                     <h4 style={{ color: '#03b672' }}>_ Projets</h4>
-                    <p className="lead" id="edit2">Projects i worked on</p>
+                    <p className="lead" id="edit">Projects i worked on</p>
                     <div className="col-lg-4 col-md-6">
-                        <div className="card" id="cards">
-                            <img src={project1} width={60} height={200} className="rounded card-img-top p-2" alt="..." />
+                        <div className="card">
+                            <img src={project1} width={60} height={200} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title text-white">HealthChat<i className="bi bi-hammer ms-3"></i></h5>
                                 <p className="card-text">The Health Care Chat Bot Project, powered by artificial intelligence, seeks to elevate healthcare accessibility.</p>
@@ -93,28 +93,28 @@ export default function Body() {
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
-                        <div className="card" id="cards">
-                            <img src={project2} width={60} height={200} className="rounded card-img-top p-2" alt="..." />
+                        <div className="card">
+                            <img src={project2} width={60} height={200} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title text-white">NewsHunt</h5>
-                                <p className="card-text">NewsHunt is a professional React based Web Application for you! Where you get all the daily insights of all categories.</p>
+                                <p className="card-text">NewsHunt is a professional React based Web Application! Where you get all the daily insights of all categories.</p>
                                 <a href="https://github.com/TRRIGE/NewsHunt_React" target="_blank" rel="noreferrer"><button type="button" className="btn text-white btn-md homeBtn2">GitHub</button></a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
-                        <div className="card" id="cards">
-                            <img src={project3} width={60} height={200} className="rounded card-img-top p-2" alt="..." />
+                        <div className="card">
+                            <img src={project3} width={60} height={200} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title text-white">TextManipulator</h5>
-                                <p className="card-text">TextManipulator is a versatile utility, designed as a React-based website, dedicated to the art of text manipulation.</p>
+                                <p className="card-text">TextManipulator is a versatile utility designed for the purpose of text manipulation for practical needs.</p>
                                 <a href="https://github.com/TRRIGE/TextManipulator_React" target="_blank" rel="noreferrer"><button type="button" className="btn text-white btn-md homeBtn2">GitHub</button></a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
-                        <div className="card" id="cards">
-                            <img src={project} width={60} height={200} className="rounded card-img-top p-2" alt="..." />
+                        <div className="card">
+                            <img src={project} width={60} height={200} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title text-white">StockManager<i className="bi bi-hammer ms-3"></i></h5>
                                 <p className="card-text">Building a thorough Stock Management System, ensuring streamlined tracking and organization of inventory data.</p>
@@ -123,8 +123,8 @@ export default function Body() {
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-6">
-                        <div className="card" id="cards">
-                            <img src={project4} width={60} height={200} className="rounded card-img-top p-2" alt="..." />
+                        <div className="card">
+                            <img src={project4} width={60} height={200} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title text-white">Remainder</h5>
                                 <p className="card-text">Remainder Web Application, solution designed to streamline and enhance your daily work management.</p>

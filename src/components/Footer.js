@@ -45,7 +45,7 @@ export default function Footer() {
                         <h4 id="edit">Connect with me!</h4>
                         <div className="footer">
                             <img src={logo} height={110} width={110} alt="logo" />
-                            <p><i className="bi bi-globe-americas"></i>Planet Earth</p>
+                            <p><i className="bi bi-globe-americas"></i>Planet Earth 🌎</p>
                             <p><i className="bi bi-envelope"></i>pratiksamarth29@gmail.com</p>
                             <div className="mt-4">
                                 <a className="fs-5 me-4 text-none" href="https://www.linkedin.com/in/pratik-samarth-ps/"><i className="bi bi-linkedin"></i></a>
@@ -55,8 +55,8 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 mt-sm-5 mt-lg-0 responsiveFooter">
-                        <h4 style={{ color: '#3AA3E7' }}>_ Contact me</h4>
+                    <div className="col-lg-6 mt-sm-5 mt-lg-0 responsiveFooter" id='form'>
+                        <h4 style={{ color: '#03b672' }}>_ Contact me</h4>
                         <form ref={form} onSubmit={sendEmail}>
                             <div className="mb-3">
                                 <input type="text" name="user_name" className="form-control text-white" id="user_name" aria-describedby="emailHelp" placeholder="your full name" style={{ backgroundColor: "#171f38" }} onInput={checkForm} />
