@@ -39,7 +39,7 @@ export default function Body() {
                         <h2 className="mt-5 text-white">Software Development Engineer</h2>
                         <div id="content">
                             <p className="mt-4">Full Stack Developer</p>
-                            <p className="mt-4">Aspiring software Developer with a fervent interest in Full Stack Web Development, seeking opportunities to delve into Software Development Engineer roles.</p>
+                            <p className="mt-4">Aspiring software Developer with a fervent interest in Full Stack Web Development, Looking opportunities to delve into Software Development Engineer roles.</p>
                         </div>
                         <div className="mt-4">
                             <a className="text-white me-4 fs-5" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
@@ -53,7 +53,7 @@ export default function Body() {
 
                 <div className="row section" id="experience">
                     <h4 style={{ color: '#03b672' }}>_ Experience</h4>
-                    <p className="lead" id="edit">Where i previously worked</p>
+                    <p className="lead" id="edit">Where i previously employed</p>
                     <div className="col-lg-6 mb-md-5 mb-sm-5" id="responsiveContent">
                         <div className="p-4" id="content_small">
                             <div className="card-body">

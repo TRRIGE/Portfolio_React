@@ -65,12 +65,13 @@ i:hover {
     box-shadow: 0 0 5px #171f38;
   }
 }
+
 .homeBtn {
   animation: glowing 2000ms infinite;
 }
 
 .homeBtn:hover {
-  animation: glowing 1500ms infinite;
+  animation: glowing 1300ms infinite;
 }
 
 .homeBtn2 {

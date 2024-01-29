@@ -25,7 +25,7 @@ export default function Header() {
                                 <a className="nav-link" href="#project">Projects</a>
                             </li>
                             <li className="nav-item ms-lg-3">
-                                <a className="nav-link" href="#contact">Conatact</a>
+                                <a className="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                         <div className='responsiveIcons d-flex flex-row items-end gap-3'>
