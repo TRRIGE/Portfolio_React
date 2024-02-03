@@ -14,14 +14,13 @@ export default function Body() {
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-lg-6" id="responsiveOrder1">
-                        <h4 style={{ color: '#03b672' }}>_ Hello!</h4>
+                        <h4 style={{ color: '#03b672' }}>━━ Hello!</h4>
                         <h1 className="text-white">I’m Pratik Samarth</h1>
                         <div id="content">
                             <p className="mt-4">Full Stack Developer</p>
                             <p className="mt-4">I'm Pratik Samarth, a dedicated Software Development Engineer, fueled by a fervent passion for full-stack development. Committed to continuous growth, I thrive as a self-learner in the ever-evolving world of technology.</p>
                         </div>
-                        <a href="Pratik Samarth.pdf" download={"Pratik Samarth.pdf"}><button type="button" className="btn text-white mt-4 homeBtn">Hire Me</button></a>
-                        {/* <a href="#contact"><button type="button" className="btn text-white btn-lg mt-4 homeBtn">Contact</button></a> */}
+                        <a href="Pratik Samarth.pdf" download={"Pratik Samarth.pdf"}><button type="button" className="btn fw-semiBold text-white mt-4 homeBtn">Hire Me</button></a>
                     </div>
                     <div className="col-lg-6 text-lg-end text-md-center text-sm-center text-center mt-sm-5 mt-lg-0 mt-md-5">
                         <img src={profile} className="responsiveImage1" width={415} height={420} alt="..." style={{ borderRadius: "1000px" }} />
@@ -30,7 +29,7 @@ export default function Body() {
 
 
                 <div className="row section" id="about">
-                    <h4 style={{ color: '#03b672' }}>_ About</h4>
+                    <h4 style={{ color: '#03b672' }}>━━ About</h4>
                     <p className="lead" id="edit">Let's find more about me</p>
                     <div className="col-lg-6 text-md-center text-sm-center text-lg-start text-center">
                         <img src={about} className="responsiveImage2" width={440} height={420} alt="..." />
@@ -52,12 +51,12 @@ export default function Body() {
 
 
                 <div className="row section" id="experience">
-                    <h4 style={{ color: '#03b672' }}>_ Experience</h4>
+                    <h4 style={{ color: '#03b672' }}>━━ Experience</h4>
                     <p className="lead" id="edit">Where i previously employed</p>
                     <div className="col-lg-6 mb-md-5 mb-sm-5" id="responsiveContent">
                         <div className="p-4" id="content_small">
                             <div className="card-body">
-                                <h4 className="card-title text-white"><i className="bi bi-buildings" style={{ color: '#03b672' }}></i> Code Crafters Community</h4>
+                                <h4 className="card-title text-white">Code Crafters Community</h4>
                                 <p className="card-text mt-1" style={{ color: '#03b672' }}>Web Development Intern</p>
                                 <p className="card-text mt-1">My responsibility was to develop and to make revisions of web applications and ensuring alignment with specified requirements</p>
                                 <p>Developed an interactive Goal and Reminder web application, incorporating current functionalities for enhanced user experience.</p>
@@ -68,7 +67,7 @@ export default function Body() {
                     <div className="col-lg-6">
                         <div className="p-4" id="content_small">
                             <div className="card-body">
-                                <h4 className="card-title text-white"><i className="bi bi-buildings" style={{ color: '#03b672' }}></i> InnoSewa Pvt. Ltd. Delhi</h4>
+                                <h4 className="card-title text-white">InnoSewa Digitlal Services Pvt. Ltd.</h4>
                                 <p className="card-text mt-1" style={{ color: '#03b672' }}>Software and Business Development Intern</p>
                                 <p className="card-text mt-1">My responsibility was to tailor projects to meet client needs with precision, ensuring excellence in execution and expectations.</p>
                                 <p>Building web application blueprints and structures tailored to client needs, ensuring a precise alignment with their requirements.</p>
@@ -80,13 +79,13 @@ export default function Body() {
 
 
                 <div className="row section" id="project">
-                    <h4 style={{ color: '#03b672' }}>_ Projets</h4>
+                    <h4 style={{ color: '#03b672' }}>━━ Projets</h4>
                     <p className="lead" id="edit">Projects i worked on</p>
                     <div className="col-lg-4 col-md-6">
                         <div className="card">
                             <img src={project1} width={60} height={200} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title text-white">HealthChat<i className="bi bi-hammer ms-3"></i></h5>
+                                <h5 className="card-title text-white">HealthChat</h5>
                                 <p className="card-text">The Health Care Chat Bot Project, powered by artificial intelligence, seeks to elevate healthcare accessibility.</p>
                                 <a href="https://github.com/TRRIGE/NewsHunt_React" target="_blank" rel="noreferrer"><button type="button" className="btn text-white btn-md homeBtn2">GitHub</button></a>
                             </div>
@@ -116,7 +115,7 @@ export default function Body() {
                         <div className="card">
                             <img src={project} width={60} height={200} className="card-img-top" alt="..." />
                             <div className="card-body">
-                                <h5 className="card-title text-white">StockManager<i className="bi bi-hammer ms-3"></i></h5>
+                                <h5 className="card-title text-white">StockManager</h5>
                                 <p className="card-text">Building a thorough Stock Management System, ensuring streamlined tracking and organization of inventory data.</p>
                                 <a href="https://github.com/TRRIGE/StockManager_Next" target="_blank" rel="noreferrer"><button type="button" className="btn text-white btn-md homeBtn2">GitHub</button></a>
                             </div>

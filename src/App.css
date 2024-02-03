@@ -44,34 +44,48 @@ i:hover {
 }
 
 .homeBtn {
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 0.75rem;
+  border-radius:0.75rem;
   border: none;
-  font-size: 27px;
-  padding: 5px 15px;
+  font-size: 32px;
+  padding: 7px 22px;
 }
 
 @keyframes glowing{
   0% {
-    background-color: #171f38;
-    box-shadow: 0 0 5px #171f38;
+    background-color:#111827;
+    box-shadow: 0 0 18px #03b672;
   }
   50% {
-    background-color: #03b672;
-    box-shadow: 0 0 20px #03b672;
+    box-shadow: 0 0 30px #03b672;
   }
   100% {
-    background-color: #171f38;
-    box-shadow: 0 0 5px #171f38;
+    background-color: #111827;
+    box-shadow: 0 0 19px #03b672;
   }
 }
 
 .homeBtn {
-  animation: glowing 2000ms infinite;
+  animation: glowing 2500ms infinite;
+}
+
+
+@keyframes glowingAfter{
+  0% {
+    background-color:#111827;
+    box-shadow: 0 0 28px #03b672;
+  }
+  50% {
+    box-shadow: 0 0 38px #03b672;
+  }
+  100% {
+    background-color: #111827;
+    box-shadow: 0 0 28px #03b672;
+  }
 }
 
 .homeBtn:hover {
-  animation: glowing 1300ms infinite;
+  animation: glowingAfter 1900ms infinite;
 }
 
 .homeBtn2 {
@@ -211,7 +225,6 @@ i:hover {
   }
 
   #navbarSupportedContent ul li a{
-    text-align: end;
     margin-bottom: 8px;
     margin-right: 10px;
   }

@@ -2,13 +2,14 @@ import React from 'react'
 import logo from '../images/logo.png'
 
 export default function Header() {
+
     return (
         <>
             <nav className="navbar navbar-expand-lg p-1 sticky-top">
                 <div className="container">
                     <a className="navbar-brand text-white fs-2" href="#"><img src={logo} height={80} width={70} alt="logo" /><span style={{ color: '#03b672' }}>P</span>ratik <span style={{ color: '#03b672' }}>S</span>amarth</a>
                     <button className="navbar-toggler" style={{ color: "transparent", borderColor: "transparent" }} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="" role="button" ><i className="bi bi-list fs-2" aria-hidden="true" style={{ color: "white" }}></i></span>
+                        <span role="button" ><i className="bi bi-list fs-2" aria-hidden="true" style={{ color: "white" }}></i></span>
                     </button>
                     <div className="collapse navbar-collapse d-lg-flex flex-row justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-2 mb-lg-0">
