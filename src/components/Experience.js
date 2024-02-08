@@ -4,7 +4,7 @@ const Experience = () => {
     return (
         <div className="row section" id="experience">
             <h4 style={{ color: '#5be9b9' }}>━━ Experience</h4>
-            <p className="lead" id="edit">Where i previously employed</p>
+            <p className="lead" id="edit">Prior employment</p>
             <div className="col-lg-6 mb-md-5 mb-sm-5" id="responsiveContent">
                 <div className="p-4" id="content_small">
                     <div className="card-body">

@@ -12,7 +12,7 @@ export default function Header() {
                     </button>
                     <div className="collapse navbar-collapse d-lg-flex flex-row justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-2 mb-lg-0">
-                            <li className="nav-item ms-lg-3">
+                            <li className="nav-item">
                                 <a className="nav-link" href="#about">About</a>
                             </li>
                             <li className="nav-item ms-lg-3">

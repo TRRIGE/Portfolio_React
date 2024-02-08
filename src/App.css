@@ -22,11 +22,11 @@ nav {
   margin-top: 40px;
 }
 
-.topIcons a i{
+.topIcons a i {
   font-size: 13px;
 }
 
-.abouIcons a i{
+.abouIcons a i {
   font-size: 16px;
 }
 
@@ -59,16 +59,12 @@ i:hover {
   color: #5be9b9;
 }
 
-#fa-hover:hover{
-  color: #5be9b9;
-}
-
 #text-image {
   opacity: 0.2;
 }
 
 #textTop {
-  margin-top: 72px;
+  margin-top: 22px;
 }
 
 .homeBtn {
@@ -182,7 +178,7 @@ i:hover {
   font-size: 18px;
 }
 
-.card{
+.card {
   background-color: #171f38;
   margin-bottom: 28px;
   border-radius: 10px;
@@ -202,7 +198,8 @@ i:hover {
   line-height: 30px;
 }
 
-.card-project h5,a {
+.card-project h5,
+a {
   font-size: 18px;
 }
 

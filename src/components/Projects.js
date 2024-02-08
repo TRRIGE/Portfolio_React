@@ -8,7 +8,7 @@ import React from 'react'
 const Projects = () => {
     return (
         <div className="row section" id="project">
-            <h4 style={{ color: '#5be9b9' }}>━━ Projets</h4>
+            <h4 style={{ color: '#5be9b9' }}>━━ Projects</h4>
             <p className="lead" id="edit">My recent work</p>
             <div className="col-lg-4 col-md-6">
                 <div className="card card-project">
