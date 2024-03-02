@@ -1,28 +1,22 @@
 import React from "react";
-import profile from '../images/profile.png';
-
+import { motion } from "framer-motion"
 
 export default function Hero() {
     return (
-        <>
-            <div className="container">
-                <div className="row mt-5">
-                    <div className="col-lg-6" id="responsiveOrder1">
-                        <h4 style={{ color: '#5be9b9' }}>━━ Hello!</h4>
-                        <h1 className="text-white">I’m Pratik Samarth</h1>
-                        <div id="content">
-                            <p className="mt-2">Fullstack Developer</p>
-                            <p className="mt-1">I'm Pratik Samarth, a dedicated Software Development Engineer, fueled by a fervent passion for full-stack development. Committed to better and continuous growth, I thrive as a self-learner in the ever-evolving world of technology.</p>
-                        </div>
-                        <a href="Pratik Samarth.pdf" download={"Pratik Samarth.pdf"}><button type="button" className="btn fw-semiBold text-white mt-4 homeBtn">Hire Me</button></a>
+        <div className="container">
+            <motion.div className="row mt-4" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeInOut" }} viewport={{ once: true }}>
+                <div className="col" id="responsiveOrder1">
+                    <p style={{ color: '#64ffda', fontFamily: 'Oxygen Mono' }}>Hi, my name is</p>
+                    <p className="display-3" style={{ color: '#ccd6f6', fontWeight: 850 }}>Pratik Samarth.</p>
+                    <div id="content">
+                        <p className="mt-2 display-3" style={{ color: '#8892b0', fontWeight: 850 }}>I build things for the web.</p>
+                        <p className="mt-4 d-none d-lg-block">A dedicated Software Development Engineer, driven by a fervent passion <br />and specialization in full-stack development. I excel as a self-learner in the  <br />dynamic and ever-evolving realm of technology.</p>
+                        <p className="mt-4 d-lg-none">A dedicated Software Development Engineer, driven by a fervent passion and specialization in full-stack development. I excel as a self-learner in the dynamic and ever-evolving realm of technology.</p>
                     </div>
-                    <div className="col-lg-6 text-lg-end text-md-center text-sm-center text-center mt-sm-5 mt-lg-0 mt-md-5">
-                        <img src={profile} className="responsiveImage1" width={415} height={420} alt="..." style={{ borderRadius: "1000px" }} />
-                    </div>
+                    <a href="Pratik Samarth.pdf" className="text-decoration-none" target="_blank" style={{ color: '#64ffda' }} ><button type="button" className="btn homeBtn">Hire Me !</button></a>
                 </div>
-                {/* <h2 className="text-center d-none d-lg-block d-xl-block d-xxl-block"><i className="bi bi-mouse active-mouse"></i></h2> */}
-            </div >
-        </>
+            </motion.div>
+        </div >
     )
 }
 
