@@ -36,11 +36,12 @@ const Projects = () => {
                             <div className='d-flex justify-content-between mb-3'>
                                 <h5 className="card-title">HealthChat</h5>
                                 <span>
-                                    <a className="fs-5" style={{ color: '#ccd6f6' }} href="https://github.com/TRRIGE/HealthChat" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
+                                    <a className="fs-5 me-3" style={{ color: '#ccd6f6' }} href="https://github.com/TRRIGE/HealthChat" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
+                                    <a className="fs-5" style={{ color: '#ccd6f6' }} href="https://healthchat-3pvr.onrender.com/" target="_blank" rel="noreferrer"><i className="bi bi-box-arrow-up-right"></i></a>
                                 </span>
                             </div>
                             <p className="card-text">The Health Care Chat Bot Project, powered by artificial intelligence, seeks to elevate healthcare accessibility.</p>
-                            <p className="projectSkills">Python Flask MySQL</p>
+                            <p className="projectSkills">Python Flask MySQL JavaScript</p>
                         </div>
                     </div>
                 </motion.div>
@@ -55,11 +56,12 @@ const Projects = () => {
                             <div className='d-flex justify-content-between mb-3'>
                                 <h5 className="card-title">NewsHunt</h5>
                                 <span>
-                                    <a className="fs-5" style={{ color: '#ccd6f6' }} href="https://github.com/TRRIGE/NewsHunt_React" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
+                                    <a className="fs-5 me-3" style={{ color: '#ccd6f6' }} href="https://github.com/TRRIGE/NewsHunt_React" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
+                                    <a className="fs-5" style={{ color: '#ccd6f6' }} href="https://newshunt-uebc.onrender.com/" target="_blank" rel="noreferrer"><i className="bi bi-box-arrow-up-right"></i></a>
                                 </span>
                             </div>
                             <p className="card-text">NewsHunt is a professional React based Web Application! Where you get all the daily insights of all categories.</p>
-                            <p className="projectSkills">React.js API BootStrap JS</p>
+                            <p className="projectSkills">React.js API BootStrap JavaScript</p>
                         </div>
                     </div>
                 </motion.div>
@@ -78,7 +80,7 @@ const Projects = () => {
                                 </span>
                             </div>
                             <p className="card-text">TextManipulator is a versatile utility designed for the purpose of text manipulation for all practical text needs.</p>
-                            <p className="projectSkills">React.js JS BootStrap SCSS</p>
+                            <p className="projectSkills">React.js JavaScript BootStrap CSS</p>
                         </div>
                     </div>
                 </motion.div>

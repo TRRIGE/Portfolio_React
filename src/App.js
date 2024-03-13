@@ -79,11 +79,11 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, ease: "easeInOut" }}
               viewport={{ once: true }}>
-              <a className="mb-4 fs-5" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
-              <a className="mb-4 fs-5" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
-              <a className="mb-4 fs-5" href="https://www.instagram.com/rn_samarth/?next=%2F" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
-              <a className="mb-4 fs-5" href="https://dribbble.com/Pratik_Samarth/about" target="_blank" rel="noreferrer"><i class="bi bi-dribbble"></i></a>
-              <a className="fs-5" style={{ marginBottom: '40px' }} href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><i className="bi bi-twitter-x"></i></a>
+              <a className="mb-4" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
+              <a className="mb-4" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
+              <a className="mb-4" href="https://www.instagram.com/rn_samarth/?next=%2F" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
+              <a className="mb-4" href="https://dribbble.com/Pratik_Samarth/about" target="_blank" rel="noreferrer"><i class="bi bi-dribbble"></i></a>
+              <a style={{ marginBottom: '40px' }} href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><i className="bi bi-twitter-x"></i></a>
             </motion.div>
             <motion.div
               id="verticalTextRight2"

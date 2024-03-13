@@ -24,7 +24,7 @@ nav {
 }
 
 #navbarSupportedContent ul li a {
-  color: #8892b0;
+  color: #ccd6f6;
 }
 
 #navbarSupportedContent ul li a:hover {
@@ -327,15 +327,16 @@ a {
   display: inline-block;
   writing-mode: vertical-rl;
   font-family: "Oxygen Mono", monospace;
-  font-size: small;
+  font-size: 10.5px;
   letter-spacing: 1px;
   margin-left: 15px;
+  letter-spacing: 2px;
 }
 
 #verticalTextRight1 {
   position: fixed;
   bottom: 100px;
-  right: 24px;
+  right: 24.5px;
   color: #ccd6f6;
   display: inline-block;
   writing-mode: vertical-rl;
@@ -344,7 +345,7 @@ a {
 #verticalTextRight2 {
   position: fixed;
   bottom: 0px;
-  right: 30px;
+  right: 28px;
   color: #ccd6f6;
   display: inline-block;
   writing-mode: vertical-rl;
