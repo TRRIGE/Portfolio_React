@@ -49,7 +49,7 @@ const About = () => {
                         <p>Here are a few technologies I’ve been working with recently:</p>
                         <ul className='d-flex recentTech'>
                             <div>
-                                <li><span className='ms-2'>JavaScript (ES6+)</span></li>
+                                <li><span className='ms-2'>JavaScript</span></li>
                                 <li><span className='ms-2'>Node.js</span></li>
                                 <li><span className='ms-2'>WordPress</span></li>
                             </div>

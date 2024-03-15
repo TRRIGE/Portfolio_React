@@ -41,7 +41,7 @@ const Projects = () => {
                                 </span>
                             </div>
                             <p className="card-text">The Health Care Chat Bot Project, powered by artificial intelligence, seeks to elevate healthcare accessibility.</p>
-                            <p className="projectSkills">Python Flask MySQL JavaScript</p>
+                            <p className="projectSkills">Python Flask MySQL JS</p>
                         </div>
                     </div>
                 </motion.div>
@@ -61,7 +61,7 @@ const Projects = () => {
                                 </span>
                             </div>
                             <p className="card-text">NewsHunt is a professional React based Web Application! Where you get all the daily insights of all categories.</p>
-                            <p className="projectSkills">React.js API BootStrap JavaScript</p>
+                            <p className="projectSkills">React.js API BootStrap JS</p>
                         </div>
                     </div>
                 </motion.div>
@@ -80,7 +80,7 @@ const Projects = () => {
                                 </span>
                             </div>
                             <p className="card-text">TextManipulator is a versatile utility designed for the purpose of text manipulation for all practical text needs.</p>
-                            <p className="projectSkills">React.js JavaScript BootStrap CSS</p>
+                            <p className="projectSkills">React.js JS BootStrap CSS</p>
                         </div>
                     </div>
                 </motion.div>
@@ -116,7 +116,7 @@ const Projects = () => {
                                 </span>
                             </div>
                             <p className="card-text">Remainder Web Application, solution designed to streamline and enhance your daily work management.</p>
-                            <p className="projectSkills" id="contact">Next.js Tailwind CSS BootStrap</p>
+                            <p className="projectSkills" id="contact">Next.js Tailwind CSS MongoDB</p>
                         </div>
                     </div>
                 </motion.div>
