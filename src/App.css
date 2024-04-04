@@ -468,6 +468,10 @@ a {
   #techDiv {
     width: 40%;
   }
+
+  .no-margin-on-mobile .card {
+    margin-bottom: 2.5px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -485,11 +489,6 @@ a {
   #navbarSupportedContent ul li a {
     text-align: center;
     margin-top: 20px;
-  }
-
-  #secondFontFamily::after {
-    content: "\a";
-    white-space: pre;
   }
 }
 
@@ -538,5 +537,19 @@ a {
 
   #scrollUp:hover {
     border-color: #64ffda;
+  }
+}
+
+@media (width > 1442px) {
+  #verticalTextRight1 {
+    right: 196.5px;
+  }
+
+  #verticalTextRight2 {
+    right: 200px;
+  }
+
+  #verticalTextLeft {
+    left: 189px;
   }
 }
