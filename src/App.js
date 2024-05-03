@@ -58,7 +58,7 @@ function App() {
           <div className="container">
             <motion.div
               id="verticalTextLeft"
-              className='d-lg-block d-none'
+              className='d-lg-block d-xxl-none d-none'
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, ease: "easeInOut" }}
@@ -73,7 +73,7 @@ function App() {
             <GetInTouch />
             <motion.div
               id="verticalTextRight1"
-              className='d-lg-block d-none'
+              className='d-lg-block d-xxl-none d-none'
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, ease: "easeInOut" }}
@@ -86,7 +86,7 @@ function App() {
             </motion.div>
             <motion.div
               id="verticalTextRight2"
-              className='d-lg-block d-none'
+              className='d-lg-block d-none d-xxl-none'
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, ease: "easeInOut" }}

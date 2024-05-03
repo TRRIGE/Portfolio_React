@@ -539,17 +539,3 @@ a {
     border-color: #64ffda;
   }
 }
-
-@media (width > 1442px) {
-  #verticalTextRight1 {
-    right: 196.5px;
-  }
-
-  #verticalTextRight2 {
-    right: 200px;
-  }
-
-  #verticalTextLeft {
-    left: 189px;
-  }
-}
