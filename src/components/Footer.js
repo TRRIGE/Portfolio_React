@@ -72,7 +72,7 @@ export default function Footer() {
                     <div className="footer">
                         <p><i className="bi bi-globe-americas"></i>Planet Earth 🌎</p>
                         <p><i className="bi bi-envelope"></i>pratiksamarth29@gmail.com</p>
-                        <div className='d-lg-none'>
+                        <div className='d-lg-none d-xl-block d-xxl-block mb-xl-3'>
                             <a className="fs-6 me-4 text-none" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
                             <a className="fs-6 me-4" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><i className="bi bi-github" ></i></a>
                             <a className="fs-6 me-4" href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><i className="bi bi-twitter-x"></i></a>

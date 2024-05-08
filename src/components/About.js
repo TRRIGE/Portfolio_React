@@ -51,7 +51,7 @@ const About = () => {
                             <div>
                                 <li><span className='ms-2'>JavaScript</span></li>
                                 <li><span className='ms-2'>Node.js</span></li>
-                                <li><span className='ms-2'>WordPress</span></li>
+                                <li><span className='ms-2'>Devops</span></li>
                             </div>
                             <div id='techDiv'>
                                 <li><span className='ms-2'>TypeScript</span></li>

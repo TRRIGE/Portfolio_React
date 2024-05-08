@@ -539,3 +539,9 @@ a {
     border-color: #64ffda;
   }
 }
+
+@media (width >= 1400px) {
+  #edit {
+    margin-bottom: 55px;
+  }
+}
