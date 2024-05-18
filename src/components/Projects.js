@@ -117,7 +117,7 @@ const Projects = () => {
                                 </span>
                             </div>
                             <p className="card-text">Percept Infosystems, an Next.js driven website for  seamless gateway to cutting-edge solutions.</p>
-                            <p className="projectSkills" id="contact">Next.js Bootstrap JS Taiwind</p>
+                            <p className="projectSkills">Next.js Bootstrap JS Taiwind</p>
                         </div>
                     </div>
                 </motion.div>
@@ -132,11 +132,11 @@ const Projects = () => {
                                 <h5 className="card-title">ClientWebApp</h5>
                                 <span>
                                     <a className="fs-5 me-3" style={{ color: '#ccd6f6' }} href="https://github.com/TRRIGE/Client_webapp" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
-                                    <a className="fs-5" style={{ color: '#ccd6f6' }} href="https://rutujakothekar-pratik-samarths-projects.vercel.app/" target="_blank" rel="noreferrer"><i className="bi bi-box-arrow-up-right"></i></a>
+                                    <a className="fs-5" style={{ color: '#ccd6f6' }} href="https://rutujakothekar.netlify.app" target="_blank" rel="noreferrer"><i className="bi bi-box-arrow-up-right"></i></a>
                                 </span>
                             </div>
-                            <p className="card-text">Percept Infosystems, an Next.js driven website for  seamless gateway to cutting-edge solutions.</p>
-                            <p className="projectSkills" id="contact">Next.js Bootstrap JS Taiwind</p>
+                            <p className="card-text">A comprehensive personal portfolio reflecting client's unique skills, achievements, & professional journey.</p>
+                            <p className="projectSkills">Next.js Bootstrap JS Taiwind</p>
                         </div>
                     </div>
                 </motion.div>
