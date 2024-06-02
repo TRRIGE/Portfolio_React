@@ -29,6 +29,7 @@ export default function Footer() {
                 e.target.reset();
                 success.style.display = "block";
                 setIsPending(false);
+                checkForm();
             }, (error) => {
                 console.log(error);
             });
