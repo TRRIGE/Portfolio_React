@@ -13,6 +13,12 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Skills from './components/Skills';
 import GetInTouch from './components/GetInTouch';
+import { FiLinkedin } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+import { FaDribbble } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
+
 
 function App() {
 
@@ -62,7 +68,7 @@ function App() {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, ease: "easeInOut" }}
-              viewport={{ once: true }}>pratiksamarth29@gmail.com<span id='rowStyleAboutVerticalLeft'></span>
+              viewport={{ once: true }}><span className="mirror-container">pratiksamarth29@gmail.com</span><span id='rowStyleAboutVerticalLeft'></span>
             </motion.div>
             <Hero />
             <About />
@@ -78,11 +84,11 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, ease: "easeInOut" }}
               viewport={{ once: true }}>
-              <a className="mb-4" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><i className="bi bi-github"></i></a>
-              <a className="mb-4" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
-              <a className="mb-4" href="https://www.instagram.com/rn_samarth/?next=%2F" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
-              <a className="mb-4" href="https://dribbble.com/Pratik_Samarth/about" target="_blank" rel="noreferrer"><i className="bi bi-dribbble"></i></a>
-              <a style={{ marginBottom: '40px' }} href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><i className="bi bi-twitter-x"></i></a>
+              <a className="mb-4 fs-4" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><FiGithub /></a>
+              <a className="mb-4 fs-4" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer"><FiLinkedin /></a>
+              <a className="mb-4 fs-4" href="https://www.instagram.com/rn_samarth/?next=%2F" target="_blank" rel="noreferrer"><FaInstagram /></a>
+              <a className="mb-4 fs-4" href="https://dribbble.com/Pratik_Samarth/about" target="_blank" rel="noreferrer"><FaDribbble /></a>
+              <a className="fs-4" style={{ marginBottom: '40px' }} href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><FaXTwitter /></a>
             </motion.div>
             <motion.div
               id="verticalTextRight2"

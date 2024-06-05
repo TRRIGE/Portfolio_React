@@ -2,6 +2,8 @@ import React, { useRef, useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import emailjs from '@emailjs/browser';
+import { FiLinkedin, FiGithub } from "react-icons/fi";
+import { FaInstagram, FaDribbble, FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
 
@@ -10,15 +12,14 @@ export default function Footer() {
         triggerOnce: true,
     });
 
+    const [isPending, setIsPending] = useState(false);
+    const form = useRef();
+
     useEffect(() => {
         if (inView) {
             controls.start({ opacity: 1, y: 0 });
         }
     }, [controls, inView]);
-
-    const [isPending, setIsPending] = useState(false)
-
-    const form = useRef();
 
     const sendEmail = (e) => {
         var success = document.getElementById("success");
@@ -32,6 +33,7 @@ export default function Footer() {
                 checkForm();
             }, (error) => {
                 console.log(error);
+                setIsPending(false);
             });
 
         setTimeout(() => {
@@ -55,6 +57,23 @@ export default function Footer() {
 
     return (
         <div className="container">
+            {isPending && (
+                <motion.div
+                    style={{
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '2px',
+                        backgroundColor: '#64ffda',
+                        zIndex: 1050,
+                    }}
+                    initial={{ width: 0 }}
+                    animate={{ width: '100%' }}
+                    transition={{ duration: 2, ease: "easeInOut" }}
+                />
+            )}
+
             <motion.div
                 className="row FooterSection"
                 ref={ref}
@@ -73,12 +92,12 @@ export default function Footer() {
                     <div className="footer">
                         <p><i className="bi bi-globe-americas"></i>Planet Earth 🌎</p>
                         <p><i className="bi bi-envelope"></i>pratiksamarth29@gmail.com</p>
-                        <div className='d-lg-none d-xl-block d-xxl-block mb-xl-3'>
-                            <a className="fs-5 me-4 text-none" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
-                            <a className="fs-5 me-4" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><i className="bi bi-github" ></i></a>
-                            <a className="fs-5 me-4" href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><i className="bi bi-twitter-x"></i></a>
-                            <a className="fs-5 me-4" href="https://www.instagram.com/rn_samarth/?next=%2F" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
-                            <a className="fs-5" href="https://dribbble.com/Pratik_Samarth/about" target="_blank" rel="noreferrer"><i className="bi bi-dribbble"></i></a>
+                        <div className='d-lg-none d-xl-none d-xxl-block mb-xl-3'>
+                            <a className="fs-5 me-4 text-none" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer">< FiLinkedin /></a>
+                            <a className="fs-5 me-4" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><FiGithub /></a>
+                            <a className="fs-5 me-4" href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><FaXTwitter /></a>
+                            <a className="fs-5 me-4" href="https://www.instagram.com/rn_samarth/?next=%2F" target="_blank" rel="noreferrer"><FaInstagram /></a>
+                            <a className="fs-5" href="https://dribbble.com/Pratik_Samarth/about" target="_blank" rel="noreferrer"><FaDribbble /></a>
                         </div>
                         <p className='d-lg-block d-none'>Interested in working together?  <br />We should queue up a time to chat. I’ll buy the coffee.</p>
                     </div>
@@ -102,8 +121,7 @@ export default function Footer() {
                         <div className="d-grid">
                             <button id='formButton' type="submit" value="Send" className="btn text-white" disabled>Send Message</button>
                         </div>
-                        <div className='fw-bold text-center mt-2' id="success">Your message sent succesfully!</div>
-                        {isPending && <div className='fw-bold text-center mt-2' style={{ color: "#64ffda", animation: "3s linear" }}>Message Sending...</div>}
+                        <div className='fw-bold text-center mt-2' id="success">Your message sent successfully!</div>
                     </form>
                 </motion.div>
             </motion.div>
@@ -112,6 +130,6 @@ export default function Footer() {
                     <p>© Copyright {new Date().getFullYear()} - Designed and built by Pratik Samarth.</p>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }

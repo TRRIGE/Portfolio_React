@@ -31,7 +31,7 @@ const Skills = () => {
                     transition={{ duration: 0.9 }}
                     className="card-group text-center no-margin-on-mobile">
                     <div className="card" style={{ paddingTop: "70px" }}>
-                        <i className="bi bi-layers mb-2" style={{ fontSize: "50px", color: "#64ffda" }}></i>
+                        <i className="bi bi-stack mb-2" style={{ fontSize: "50px", color: "#64ffda" }}></i>
                         <div className="card-body mt-2">
                             <h4 className="card-title mb-3" style={{ color: '#ccd6f6' }}>Designer</h4>
                             <p className="card-text mb-4">I value simple content structure, clean designs, and thoughtful interactions.</p>
@@ -55,7 +55,7 @@ const Skills = () => {
                         <div className="card-body mt-2">
                             <h4 className="card-title mb-3" style={{ color: '#ccd6f6' }}>Backend Developer</h4>
                             <p className="card-text mb-4">I enjoy crafting and turning concepts into powerful functionality behind the scenes.</p>
-                            <p className="card-text mb-4"><span style={{ color: "#64ffda" }}>Languages I Use: </span><br /> Node, Express, JavaScript, Python, PHP</p>
+                            <p className="card-text mb-4"><span style={{ color: "#64ffda" }}>Languages I Use: </span><br /> Node, Express, JavaScript, Python, PHP, Git</p>
                             <p><span style={{ color: "#64ffda" }}>Dev Tools: </span><br />Firebase<br />Postman<br />MongoDB<br />MySQL<br />Render<br />VSCode<br />
                             </p>
                         </div>

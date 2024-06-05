@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { FiExternalLink } from "react-icons/fi";
+
 
 const Experience = () => {
     const controls = useAnimation();
@@ -34,7 +36,7 @@ const Experience = () => {
                             <div className='d-flex justify-content-between'>
                                 <h4 className="card-title" style={{ color: '#ccd6f6' }}>InnoSewa Pvt. Ltd.</h4>
                                 <span>
-                                    <a className="fs-5" style={{ color: '#ccd6f6' }} href="https://innosewa.com/" target="_blank" rel="noreferrer"><i className="bi bi-box-arrow-up-right"></i></a>
+                                    <a className="fs-4 icon-link" href="https://innosewa.com/" target="_blank" rel="noreferrer"><FiExternalLink /></a>
                                 </span>
                             </div>
                             <p className="card-text" style={{ color: '#64ffda' }}>Software and Business Development Intern</p>
@@ -54,7 +56,7 @@ const Experience = () => {
                             <div className='d-flex justify-content-between'>
                                 <h4 className="card-title" style={{ color: '#ccd6f6' }}>Transcendental Technologies.</h4>
                                 <span>
-                                    <a className="fs-5" style={{ color: '#ccd6f6' }} href="https://transcendental-technologies.com/" target="_blank" rel="noreferrer"><i className="bi bi-box-arrow-up-right"></i></a>
+                                    <a className="fs-4 icon-link" href="https://transcendental-technologies.com/" target="_blank" rel="noreferrer"><FiExternalLink /></a>
                                 </span>
                             </div>
                             <p className="card-text" style={{ color: '#64ffda' }}>Full Stack Development Intern</p>
