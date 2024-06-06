@@ -59,15 +59,7 @@ export default function Footer() {
         <div className="container">
             {isPending && (
                 <motion.div
-                    style={{
-                        position: 'fixed',
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '2px',
-                        backgroundColor: '#64ffda',
-                        zIndex: 1050,
-                    }}
+                    className="progress-bar"
                     initial={{ width: 0 }}
                     animate={{ width: '100%' }}
                     transition={{ duration: 2, ease: "easeInOut" }}
