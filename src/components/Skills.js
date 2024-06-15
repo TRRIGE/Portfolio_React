@@ -66,7 +66,7 @@ const Skills = () => {
                             <h4 className="card-title mb-3" style={{ color: '#ccd6f6' }}> Devops</h4>
                             <p className="card-text mb-4">Architecting automation, enabling collaboration, and driving efficiency for impactful software delivery.</p>
                             <p className="card-text mb-4"><span style={{ color: "#64ffda" }}>Languages I Use: </span><br />JavaScript, Python</p>
-                            <p><span style={{ color: "#64ffda" }}>Dev Tools: </span><br />Git<br />Docker<br />Kubernetes<br />Jenkins<br />Ansible<br />Terraform<br />AWS<br />
+                            <p><span style={{ color: "#64ffda" }}>Dev Tools: </span><br />Git<br />Docker<br />Kubernetes<br />Ansible<br />AWS<br />
                             </p>
                         </div>
                     </div>

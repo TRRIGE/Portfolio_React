@@ -16,8 +16,8 @@ import GetInTouch from './components/GetInTouch';
 import { FiLinkedin } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
-import { FaDribbble } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
+import { SlSocialBehance } from "react-icons/sl";
 
 
 function App() {
@@ -86,8 +86,8 @@ function App() {
               viewport={{ once: true }}>
               <a className="mb-4 fs-4" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><FiGithub /></a>
               <a className="mb-4 fs-4" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer"><FiLinkedin /></a>
+              <a className="mb-4 fs-4" href="https://www.behance.net/pratiksamarth" target="_blank" rel="noreferrer"><SlSocialBehance /></a>
               <a className="mb-4 fs-4" href="https://www.instagram.com/rn_samarth/?next=%2F" target="_blank" rel="noreferrer"><FaInstagram /></a>
-              <a className="mb-4 fs-4" href="https://dribbble.com/Pratik_Samarth/about" target="_blank" rel="noreferrer"><FaDribbble /></a>
               <a className="fs-4" style={{ marginBottom: '40px' }} href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><FaXTwitter /></a>
             </motion.div>
             <motion.div

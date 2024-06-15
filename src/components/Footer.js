@@ -3,7 +3,9 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import emailjs from '@emailjs/browser';
 import { FiLinkedin, FiGithub } from "react-icons/fi";
-import { FaInstagram, FaDribbble, FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { SlSocialBehance } from "react-icons/sl";
+
 
 export default function Footer() {
 
@@ -20,6 +22,15 @@ export default function Footer() {
             controls.start({ opacity: 1, y: 0 });
         }
     }, [controls, inView]);
+
+    useEffect(() => {
+        if (isPending) {
+            document.title = "Sending...";
+        } else {
+            document.title = "Pratik Samarth";
+        }
+    }, [isPending]);
+
 
     const sendEmail = (e) => {
         var success = document.getElementById("success");
@@ -48,7 +59,7 @@ export default function Footer() {
 
         var submitButton = document.getElementById('formButton');
 
-        if (nameValue !== '' && emailValue !== '' && messageValue !== '') {
+        if (nameValue !== '' && emailValue !== '' && messageValue !== '' && !isPending) {
             submitButton.removeAttribute('disabled');
         } else {
             submitButton.setAttribute('disabled', 'disabled');
@@ -85,11 +96,11 @@ export default function Footer() {
                         <p><i className="bi bi-globe-americas"></i>Planet Earth 🌎</p>
                         <p><i className="bi bi-envelope"></i>pratiksamarth29@gmail.com</p>
                         <div className='d-lg-none d-xl-none d-xxl-block mb-xl-3'>
-                            <a className="fs-5 me-4 text-none" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer">< FiLinkedin /></a>
                             <a className="fs-5 me-4" href="https://github.com/TRRIGE" target="_blank" rel="noreferrer"><FiGithub /></a>
-                            <a className="fs-5 me-4" href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><FaXTwitter /></a>
+                            <a className="fs-5 me-4 text-none" href="https://www.linkedin.com/in/pratik-samarth-ps/" target="_blank" rel="noreferrer">< FiLinkedin /></a>
+                            <a className="fs-5 me-4" href="https://www.behance.net/pratiksamarth" target="_blank" rel="noreferrer"><SlSocialBehance /></a>
                             <a className="fs-5 me-4" href="https://www.instagram.com/rn_samarth/?next=%2F" target="_blank" rel="noreferrer"><FaInstagram /></a>
-                            <a className="fs-5" href="https://dribbble.com/Pratik_Samarth/about" target="_blank" rel="noreferrer"><FaDribbble /></a>
+                            <a className="fs-5 me-4" href="https://twitter.com/PratikSamarth" target="_blank" rel="noreferrer"><FaXTwitter /></a>
                         </div>
                         <p className='d-lg-block d-none'>Interested in working together?  <br />We should queue up a time to chat. I’ll buy the coffee.</p>
                     </div>
