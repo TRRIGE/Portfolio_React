@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiExternalLink } from "react-icons/fi";
@@ -6,8 +6,31 @@ import { FiExternalLink } from "react-icons/fi";
 
 const Experience = () => {
     const controls = useAnimation();
+    const [threshold, setThreshold] = useState(0.3);
+
+    useEffect(() => {
+        const updateThreshold = () => {
+            if (window.innerWidth < 768) {
+                setThreshold(0.2);
+            } else if (window.innerWidth < 992) {
+                setThreshold(0.2);
+            } else {
+                setThreshold(0.38);
+            }
+        };
+
+        updateThreshold();
+
+        window.addEventListener('resize', updateThreshold);
+
+        return () => {
+            window.removeEventListener('resize', updateThreshold);
+        };
+    }, []);
+
     const [ref, inView] = useInView({
         triggerOnce: true,
+        threshold: threshold,
     });
 
     useEffect(() => {
@@ -25,7 +48,7 @@ const Experience = () => {
                 animate={controls}
                 transition={{ duration: 0.9 }}>
                 <h6><span id="secondFontFamily2">03. </span><span className='fs-4' style={{ color: '#ccd6f6' }}>Experience </span><span id="rowStyleExperience"></span></h6>
-                <p id="edit">Prior employment</p>
+                <p id="edit">Where I’ve Worked</p>
                 <motion.div ref={ref}
                     initial={{ opacity: 0, y: 50 }}
                     animate={controls}

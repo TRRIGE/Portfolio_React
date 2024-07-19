@@ -10,8 +10,31 @@ import { SlSocialBehance } from "react-icons/sl";
 export default function Footer() {
 
     const controls = useAnimation();
+    const [threshold, setThreshold] = useState(0.3);
+
+    useEffect(() => {
+        const updateThreshold = () => {
+            if (window.innerWidth < 768) {
+                setThreshold(0.1);
+            } else if (window.innerWidth < 992) {
+                setThreshold(0.2);
+            } else {
+                setThreshold(0.3);
+            }
+        };
+
+        updateThreshold();
+
+        window.addEventListener('resize', updateThreshold);
+
+        return () => {
+            window.removeEventListener('resize', updateThreshold);
+        };
+    }, []);
+
     const [ref, inView] = useInView({
         triggerOnce: true,
+        threshold: threshold,
     });
 
     const [isPending, setIsPending] = useState(false);

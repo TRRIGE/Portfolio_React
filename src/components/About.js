@@ -1,12 +1,35 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import profile from '../assets/profile.png';
 
 const About = () => {
     const controls = useAnimation();
+    const [threshold, setThreshold] = useState(0.3);
+
+    useEffect(() => {
+        const updateThreshold = () => {
+            if (window.innerWidth < 768) {
+                setThreshold(0.24);
+            } else if (window.innerWidth < 992) {
+                setThreshold(0.2);
+            } else {
+                setThreshold(0.3);
+            }
+        };
+
+        updateThreshold();
+
+        window.addEventListener('resize', updateThreshold);
+
+        return () => {
+            window.removeEventListener('resize', updateThreshold);
+        };
+    }, []);
+
     const [ref, inView] = useInView({
         triggerOnce: true,
+        threshold: threshold,
     });
 
     useEffect(() => {
@@ -32,8 +55,8 @@ const About = () => {
                     animate={controls}
                     transition={{ duration: 0.9 }}
                     className="col-lg-4 text-md-center text-sm-center text-lg-start text-center">
-                    <div className="pe-1 pb-1 profileImageContainer">
-                        <img src={profile} className="responsiveImage1" width={300} height={300} alt="..." />
+                    <div className="pe-1 pb-1">
+                        <img src={profile} className="responsiveImage1 button-glow" width={300} height={300} alt="..." />
                     </div>
                 </motion.div>
                 <motion.div ref={ref}

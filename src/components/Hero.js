@@ -13,7 +13,7 @@ export default function Hero() {
                         <p className="mt-4 d-none d-lg-block">A dedicated Software Development Engineer, driven by a fervent passion <br />and specialization in full-stack development. I excel as a self-learner in the  <br />dynamic and ever-evolving realm of technology.</p>
                         <p className="mt-4 d-lg-none">A dedicated Software Development Engineer, driven by a fervent passion and specialization in full-stack development. I excel as a self-learner in the dynamic and ever-evolving realm of technology.</p>
                     </div>
-                    <a href="Pratik Samarth.pdf" className="text-decoration-none" target="_blank" style={{ color: '#64ffda' }} ><button type="button" className="btn homeBtn">Hire Me !</button></a>
+                    <a href="Pratik_Samarth.pdf" className="text-decoration-none" target="_blank" style={{ color: '#64ffda' }} ><button type="button" className="btn homeBtn">Hire Me !</button></a>
                 </div>
             </motion.div>
         </div >
