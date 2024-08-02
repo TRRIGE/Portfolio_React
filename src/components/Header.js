@@ -5,25 +5,32 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const [showHeader, setShowHeader] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    const [scrolled, setScrolled] = useState(false);
+    const [scrollThreshold, setScrollThreshold] = useState(0);
 
     const controlHeader = () => {
         if (typeof window !== 'undefined') {
-            if (window.scrollY > lastScrollY) {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
                 setShowHeader(false);
             } else {
                 setShowHeader(true);
             }
-            setLastScrollY(window.scrollY);
+            setLastScrollY(currentScrollY);
+
+            if (currentScrollY > 100) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
         }
     };
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
             window.addEventListener('scroll', controlHeader);
+
+            setScrollThreshold(window.innerHeight / 7);
 
             return () => {
                 window.removeEventListener('scroll', controlHeader);
@@ -33,7 +40,7 @@ export default function Header() {
 
     return (
         <motion.nav
-            className="navbar navbar-expand-lg sticky-top"
+            className={`navbar navbar-expand-lg sticky-top ${scrolled ? 'scrolled' : ''}`}
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: showHeader ? 1 : 0, y: showHeader ? 0 : -50 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
@@ -48,20 +55,23 @@ export default function Header() {
                 <a className="navbar-brand fs-2" style={{ color: '#ccd6f6' }} href="#">
                     <span style={{ color: '#64ffda' }}>P</span>ratik <span style={{ color: '#64ffda' }}>S</span>amarth
                 </a>
-                <button
+                <motion.button
                     className="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent"
-                    aria-expanded={isOpen}
+                    aria-expanded="false"
                     aria-label="Toggle navigation"
-                    onClick={toggleMenu}
+                    initial={{ rotate: 0 }}
+                    animate={{ rotate: isOpen ? 180 : 0 }}
+                    transition={{ duration: 0.5, ease: 'easeInOut' }}
+                    onClick={() => setIsOpen(!isOpen)}
                 >
                     <span role="button">
-                        <i className={isOpen ? 'bi bi-x-lg fs-1' : 'bi bi-list fs-1'} aria-hidden="true" style={{ color: 'white' }}></i>
+                        <i className="bi bi-list fs-1" aria-hidden="true" style={{ color: isOpen ? '#64ffda' : 'white' }}></i>
                     </span>
-                </button>
+                </motion.button>
                 <div className="collapse navbar-collapse d-lg-flex flex-row justify-content-end" id="navbarSupportedContent">
                     <ul className="navbar-nav mb-2 mb-lg-0">
                         <li className="nav-item small">
