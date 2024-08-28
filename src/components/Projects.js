@@ -4,7 +4,6 @@ import { useInView } from 'react-intersection-observer';
 import { FiGithub } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
 
-
 const Projects = () => {
     const controls = useAnimation();
     const [threshold, setThreshold] = useState(0.3);
@@ -119,7 +118,7 @@ const Projects = () => {
                             <div className='d-flex justify-content-between mb-3'>
                                 <h5 className="card-title">ChatTalk</h5>
                                 <span>
-                                    <a className="fs-5 icon-link me-3" href="https://github.com/TRRIGE/ChatTalk" target="_blank" rel="noreferrer"><FiGithub /></a>
+                                    <a className="fs-5 icon-link" href="https://github.com/TRRIGE/ChatTalk" target="_blank" rel="noreferrer"><FiGithub /></a>
                                 </span>
                             </div>
                             <p className="card-text">ChatTalk is an AI conversational agent using OpenAI technology to simulate human-like interactions.</p>
@@ -160,29 +159,7 @@ const Projects = () => {
                                 </span>
                             </div>
                             <p className="card-text">Build a thorough Stock Management System, ensuring streamlined tracking and organization of inventory data.</p>
-                            <p className="projectSkills">Next.js Tailwind Node MongoDB</p>
-                        </div>
-                    </div>
-                </motion.div>
-                <motion.div
-                    ref={ref}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={controls}
-                    transition={{ duration: 0.9 }}
-                    className="col-lg-4 icon-link col-md-6">
-                    <div className="card card-project">
-                        <div className="card-body">
-                            <div className='d-flex justify-content-between mb-3'>
-                                <h5 className="card-title">NewsHunt</h5>
-                                <span>
-                                    <a className="fs-5 icon-link me-3" href="https://github.com/TRRIGE/NewsHunt_React" target="_blank" rel="noreferrer"><FiGithub /></a>
-                                    <a className="fs-4 icon-link" href="https://newshunt-uebc.onrender.com/" target="_blank" rel="noreferrer">
-                                        <FiExternalLink />
-                                    </a>
-                                </span>
-                            </div>
-                            <p className="card-text">NewsHunt is a professional React based Web Application! Where you get all the daily insights of all categories.</p>
-                            <p className="projectSkills" id='contact'>React.js API BootStrap JS</p>
+                            <p className="projectSkills" id="contact">Next.js Tailwind Node MongoDB</p>
                         </div>
                     </div>
                 </motion.div>
