@@ -44,6 +44,7 @@ export default function Header() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: showHeader ? 1 : 0, y: showHeader ? 0 : -50 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
+            style={{ pointerEvents: showHeader ? 'auto' : 'none' }}
         >
             <motion.div
                 className="container"
