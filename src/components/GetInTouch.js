@@ -39,7 +39,7 @@ const GetInTouch = () => {
 
     return (
         <div className='container'>
-            <motion.div className="row section text-center"
+            <motion.div className="row FooterSectionTop text-center"
                 ref={ref}
                 initial={{ opacity: 0, y: 50 }}
                 animate={controls}

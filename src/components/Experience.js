@@ -53,7 +53,7 @@ const Experience = () => {
 
     return (
         <div className='container'>
-            <motion.div className="row section"
+            <motion.div className="row expSection"
                 id="experience"
                 ref={ref}
                 initial={{ opacity: 0, y: 50 }}
