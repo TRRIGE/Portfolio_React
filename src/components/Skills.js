@@ -59,7 +59,7 @@ const Skills = () => {
                         <div className="card-body mt-2">
                             <h4 className="card-title mb-3" style={{ color: '#ccd6f6' }}>Frontend Developer</h4>
                             <p className="card-text mb-4">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                            <p className="card-text mb-4"><span style={{ color: "#64ffda" }}>Languages I Use: </span><br /> HTML, CSS, JavaScript, Tailwind CSS, jQuery, React Native, Git</p>
+                            <p className="card-text mb-4"><span style={{ color: "#64ffda" }}>Languages I Use: </span><br /> HTML, CSS, JavaScript, Tailwind CSS, React Native, Git</p>
                             <p><span style={{ color: "#64ffda" }}>Dev Tools: </span><br />Bootstrap<br />React<br />Next<br />EJS<br />Figma<br />Vercel<br /></p>
                         </div>
                     </div>
@@ -68,8 +68,8 @@ const Skills = () => {
                         <div className="card-body mt-2">
                             <h4 className="card-title mb-3" style={{ color: '#ccd6f6' }}>Backend Developer</h4>
                             <p className="card-text mb-4">I enjoy crafting and turning concepts into powerful functionality behind the scenes.</p>
-                            <p className="card-text mb-4"><span style={{ color: "#64ffda" }}>Languages I Use: </span><br /> Node, Express, JavaScript, Python, Git</p>
-                            <p><span style={{ color: "#64ffda" }}>Dev Tools: </span><br />Firebase<br />Postman<br />MongoDB<br />MySQL<br />PostgreSQL<br />Redis<br />Render<br /></p>
+                            <p className="card-text mb-4"><span style={{ color: "#64ffda" }}>Languages I Use: </span><br /> Node, Express, JavaScript, Git</p>
+                            <p><span style={{ color: "#64ffda" }}>Dev Tools: </span><br />Firebase<br />Postman<br />MongoDB<br />MySQL<br />PostgreSQL<br />Redis<br />Supabase<br /></p>
                         </div>
                     </div>
                     <div className="card" style={{ paddingTop: "70px" }}>
@@ -78,7 +78,7 @@ const Skills = () => {
                             <h4 className="card-title mb-3" style={{ color: '#ccd6f6' }}> Devops</h4>
                             <p className="card-text mb-4">Architecting automation, enabling collaboration, and driving efficiency for impactful software delivery.</p>
                             <p className="card-text mb-4"><span style={{ color: "#64ffda" }}>Languages I Use: </span><br />JavaScript, Python</p>
-                            <p><span style={{ color: "#64ffda" }}>Dev Tools: </span><br />Git<br />Docker<br />Kubernetes<br />Ansible<br />AWS<br /></p>
+                            <p><span style={{ color: "#64ffda" }}>Dev Tools: </span><br />Git<br />Docker<br />Kubernetes<br />Ansible<br />AWS<br />Jenkins <br/> Grafana</p>
                         </div>
                     </div>
                 </motion.div>

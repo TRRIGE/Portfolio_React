@@ -152,7 +152,12 @@ export default function Footer() {
                 </motion.div>
             </motion.div>
             <div className="row mb-2 mt-5">
-                <div className="col text-center">
+                <div className="col-md-6" id="version2">
+                    <a href="https://pratiksamarthprojects.vercel.app/" target="_blank" className="text-decoration-none" style={{ color: '#64ffda' }}>
+                        <button type="button" className="btn homeBtn4 small">Switch to Version 2</button>
+                    </a>
+                </div>
+                <div className="col-md-6" id="cpyright">
                     <p>© Copyright {new Date().getFullYear()} - Designed and built by Pratik Samarth.</p>
                 </div>
             </div>

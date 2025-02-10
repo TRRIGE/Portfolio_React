@@ -66,20 +66,20 @@ const About = () => {
                     className="col-lg-8" id="responsiveImage2">
                     <h4 id="textTop">Software Development Engineer</h4>
                     <div id="content">
-                        <p style={{ color: '#ccd6f6' }}>Fullstack Developer</p>
-                        <p className="mt-4">Aspiring software Developer with a fervent interest in Full Stack Web Development, I enjoy working on the web and making sure it continues to be a place for everyone and our creative, personal, and weird passions.</p>
-                        <p>I experiment with the web as a creative medium. This here portfolio changes each year in pursuit of learning and using web technology in unexpected ways.</p>
+                        <p style={{ color: '#ccd6f6' }}>Fullstack Developer & DevOps Engineer</p>
+                        <p className="mt-4">Aspiring Software Developer with a fervent interest in Full Stack Web Development and DevOps, I enjoy working on the web and ensuring it remains a space for everyone to explore their creative, personal, and unique passions.</p>
+                        <p>Experimenting the web as a creative medium, and my portfolio evolves each year as I explore and apply web technologies in innovative ways.</p>
                         <p>Here are a few technologies I’ve been working with recently:</p>
                         <ul className='d-flex recentTech'>
                             <div>
-                                <li><span className='ms-2'>JS(ES6)</span></li>
+                                <li><span className='ms-2'>AWS</span></li>
                                 <li><span className='ms-2'>Node.js</span></li>
-                                <li><span className='ms-2'>Devops</span></li>
+                                <li><span className='ms-2'>Kubernetes</span></li>
                             </div>
                             <div id='techDiv'>
                                 <li><span className='ms-2'>TypeScript</span></li>
-                                <li><span className='ms-2'>React</span></li>
-                                <li><span className='ms-2'>Firebase</span></li>
+                                <li><span className='ms-2'>Next</span></li>
+                                <li><span className='ms-2'>Devops</span></li>
                             </div>
                         </ul>
                     </div>

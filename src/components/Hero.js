@@ -10,8 +10,8 @@ export default function Hero() {
                     <p className="display-3" style={{ color: '#ccd6f6', fontWeight: 850 }}>Pratik Samarth.</p>
                     <div id="content">
                         <p className="mt-2 display-3" style={{ color: '#8892b0', fontWeight: 850 }}>I build things for the web.</p>
-                        <p className="mt-4 d-none d-lg-block">A dedicated Software Development Engineer, driven by a fervent passion <br />and specialization in full-stack development. I excel as a self-learner in the  <br />dynamic and ever-evolving realm of technology.</p>
-                        <p className="mt-4 d-lg-none">A dedicated Software Development Engineer, driven by a fervent passion and specialization in full-stack development. I excel as a self-learner in the dynamic and ever-evolving realm of technology.</p>
+                        <p className="mt-4 d-none d-lg-block">A dedicated Software Development Engineer, driven by a fervent passion <br />and specialization in Fullstack Development and DevOps Engineering. A self learner in the <br/>dynamic and ever evolving world of technology</p>
+                        <p className="mt-4 d-lg-none">A dedicated Software Development Engineer, driven by a fervent passion and specialization in Fullstack Development and DevOps Engineering. A self learner in the dynamic and ever-evolving realm of technology.</p>
                     </div>
                     <a href="Pratik_Samarth.pdf" className="text-decoration-none" target="_blank" style={{ color: '#64ffda' }} ><button type="button" className="btn homeBtn">Hire Me !</button></a>
                 </div>

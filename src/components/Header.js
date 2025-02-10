@@ -95,6 +95,11 @@ export default function Header() {
                                 <span id="secondFontFamily">04. </span>Work
                             </a>
                         </li>
+                        <li className="nav-item ms-lg-3 small" id="switchLi">
+                            <a className="nav-link" href="https://pratiksamarthprojects.vercel.app/">
+                                <span id="secondFontFamily">05. </span>Switch to Version 2
+                            </a>
+                        </li>
                         <li className="nav-item ms-lg-4 navButtonBottom">
                             <a href="#contact" className="text-decoration-none" style={{ color: '#64ffda' }}>
                                 <button type="button" className="btn homeBtn2 small">Say Hello</button>

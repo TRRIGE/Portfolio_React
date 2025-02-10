@@ -81,7 +81,7 @@ const Experience = () => {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={controls}
                     transition={{ duration: 0.9 }}
@@ -100,7 +100,7 @@ const Experience = () => {
                             <p style={{ fontSize: "15px" }}>Contributing to both front-end and back-end development, ensuring integration and functionality of web applications.</p>
                         </div>
                     </div>
-                </motion.div>
+                </motion.div> */}
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={controls}
